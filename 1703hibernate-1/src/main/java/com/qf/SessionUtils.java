@@ -8,7 +8,7 @@ import org.hibernate.service.ServiceRegistryBuilder;
 
 public class SessionUtils {
 	public static Session getSession(){
-//		1创建Configuration对象封装Hibernate的配置信息。
+//		1创建Configuration对象封装Hibernate的配置信息。  
 //		注意：仅通过构造器创建Configuration对象读取不到配置信息，还需要再调用configure()方法加载配置文件。
 		Configuration cfg=new Configuration().configure();
 //		2创建ServiceRegistry对象用于注册Hibernate配置信息
