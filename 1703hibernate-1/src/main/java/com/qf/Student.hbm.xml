@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<!-- name实体类的包名+类名， table 就是表名 -->
+	<class name="com.qf.Student" table="student">
+	<!-- 属性名设置为id，hibernate默认会把它当做主键 -->
+		<!-- name代表类的属性名 ,type是属性的类型 -->
+		<id name="id" type="int">
+			<generator class="native" />
+		</id>
+		<!-- property表示普通字段 -->
+		<property name="name" type="java.lang.String">
+			<column name="name"></column>
+		</property>
+		<property name="age" type="int">
+			<column name="age"></column>
+		</property>
+		<property name="address" type="java.lang.String">
+			<column name="address"></column>
+		</property>
+		
+	</class>	
+</hibernate-mapping>
